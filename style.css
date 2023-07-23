@@ -1,0 +1,1199 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* all similar content styling codes */
+section {
+    padding: 100px 0;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+footer.skills {
+    font-family: 'Poppins', sans-serif;
+}
+
+#skil {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.services .serv-content,
+.skills.serve-content1,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title2222 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(140, 195, 185);
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* navbar styling */
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: rgb(140, 195, 185);
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span {
+    color: rgb(140, 195, 185);
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #fff;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: rgb(140, 195, 185);
+}
+
+.navbar.sticky .menu li a:hover {
+    color: #fff;
+}
+
+/* menu btn styling */
+.menu-btn {
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: linear-gradient(#2e2d2d, #156161);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(90%);
+}
+
+
+/* home section styling */
+.home {
+    display: flex;
+    background: url("images/main2.png") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    width: 100%;
+    display: flex;
+}
+
+.home .max-width .row {
+    margin-right: 0;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span {
+    color: linear-gradient(#2e2d2d, #156161);
+    font-weight: 500;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: linear-gradient(#2e2d2d, #156161);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(140, 195, 185);
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color: linear-gradient(#2e2d2d, #156161);
+    background: none;
+}
+
+.profilebutton {
+
+
+    display: block;
+    background: linear-gradient(#2e2d2d, #156161);
+    color: #fff;
+    font-size: 25px;
+    padding: 2% 6%;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(140, 195, 185);
+    transition: all 0.3s ease;
+
+}
+
+.profilebutton:hover {
+    color: linear-gradient(#2e2d2d, #156161);
+    background: none;
+}
+
+
+
+.profilebutton1 {
+
+
+    text-align: center;
+    display: inline-block;
+    background: linear-gradient(#2e2d2d, #156161);
+    color: #fff;
+    font-size: 25px;
+    padding: 2% 3%;
+    margin-top: 20px;
+    width: 100px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(140, 195, 185);
+    transition: all 0.3s ease;
+
+}
+
+.profilebutton1:hover {
+    color: linear-gradient(#2e2d2d, #156161);
+    background: none;
+}
+
+
+
+
+
+
+
+
+/* about section styling */
+.about .title::after {
+    content: "who i am";
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: linear-gradient(#2e2d2d, #156161);
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: linear-gradient(#2e2d2d, #156161);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(140, 195, 185);
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: linear-gradient(#2e2d2d, #156161);
+    background: none;
+}
+
+/* education section styling */
+.services,
+.teams
+ {
+    color: #fff;
+    /* background: radial-gradient(#111, #071a1a); */
+    background: linear-gradient(#2e2d2d, #156161);
+}
+
+/* ---------------------------------------------------?3 card layout------------- */
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------------------- */
+.jov {
+    color: #fff;
+    padding-top: 2%;
+}
+
+.jov .title::after {
+    background: #2b2a2a;
+    /* content: "whaprovide"; */
+}
+
+.jov .title::before {
+    background: #fff;
+}
+
+
+
+.myskills {
+    color: #fff;
+    padding-top: 2%;
+    background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
+    overflow: hidden
+}
+
+.myskills .title::after {
+    background: #2b2a2a;
+    content: "what i know";
+}
+
+.myskills .title::before {
+    background: #fff;
+}
+
+
+
+/* .ski {
+    color: white;
+    padding-top: 1%;
+
+    background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
+}
+
+.ski .title::after {
+    background: #2b2a2a;
+    /* content: "whaprovide"; */
+
+/* 
+.ski .title::before {
+    background: #fff;
+} */
+ 
+
+
+
+
+
+.gallerymy {
+    color: #fff;
+
+    background: radial-gradient(#111, #071a1a);
+}
+
+.gallerymy .title::after {
+    background: #2b2a2a;
+    /* content: "whaprovide"; */
+}
+
+.gallerymy .title::before {
+    background: #fff;
+}
+
+
+
+.achieve {
+    /* color: #fff; */
+    background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
+}
+
+.achieve .title::after {
+    background: #ebe3e3;
+    content: "what i achieved";
+}
+
+.achieve .title::before {
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+.codingprofile {
+    color: #fff;
+    background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
+    */ background: none;
+    overflow: hidden;
+}
+
+.codingprofile .title::after {
+    background: #eae5e5;
+    content: "what i've coded";
+}
+
+.codingprofile .title::before {
+    background: #fff;
+
+
+}
+
+
+.certificates {
+    color: #fff;
+    background: linear-gradient(to right, #0e0e0e 70%, #142d2a);
+}
+
+.certificates .title::after {
+    background: #eae5e5;
+    content: "what i got";
+}
+
+.certificates .title::before {
+    background: #fff;
+}
+
+
+/* -------------------------------------------------------education------------------------------------- */
+
+.services .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.services .title::after,
+.teams .title::after {
+    background: #111;
+    content: "what i provide";
+}
+
+
+
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.card1 {
+    width: calc(33% - 20px);
+    background: linear-gradient(#dacbcb, #084a4a);
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background: linear-gradient(#2e2d2d, #156161);
+}
+
+
+
+
+
+
+
+
+
+
+.card1:hover {
+    background: linear-gradient(#2e2d2d, #156161);
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.card1:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: linear-gradient(#2e2d2d, #156161);
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*---------------------------------- skills section styling ------------------------------------------*/
+
+.checked {
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact section styling */
+.contact .title::after {
+    content: "get in touch";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: linear-gradient(#2e2d2d, #156161);
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #333;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button-area {
+    display: flex;
+    align-items: center;
+}
+
+.right form .button-area button {
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: linear-gradient(#2e2d2d, #156161);
+    border: 2px solid rgb(140, 195, 185);
+    transition: all 0.3s ease;
+}
+
+.right form .button-area button:hover {
+    color: linear-gradient(#2e2d2d, #156161);
+    background: none;
+}
+
+
+
+
+/* footer section styling */
+footer {
+    /* height: auto; */
+    background: #0f0101;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+/* footer span a{
+    color:linear-gradient(#2e2d2d, #156161);
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+} */
+
+
+/* responsive media query start */
+@media (max-width: 1104px) {
+    .about .about-content .left img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    .max-width {
+        max-width: 930px;
+    }
+
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+
+    .home .home-content a {
+        font-size: 20px;
+    }
+
+    .services .serv-content .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 19px;
+    }
+
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+
+    .right form .error-box {
+        width: 150px;
+    }
+
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
+
+
+/* hiiueiub */
+/* 
+.supply {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the supply */
+/*
+  .supply button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+/* .supply button:hover {
+    background-color: #ddd;
+  }
+   */
+/* Create an active/current supplylink class */
+/* .supply button.active {
+    background-color: #ccc;
+  }
+   */
+/* Style the supply content 
+  .supplycontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  } */
+
+/* * {
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: Arial, Helvetica, sans-serif;
+  } 
+
+
+  /* ---------------------------------------coding profit----------------------------------- */
+
+/* Float four awes side by side */
+/* .aweyyy {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+} */
+
+.awe {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+    /* border: 5px solid green; */
+    /* margin-left: 2px; */
+    /* margin-right: 2px; */
+}
+
+.awe1 {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* border: 5px solid green; */
+    /* margin-left: 2px; */
+    /* margin-right: 2px; */
+    overflow: hidden;
+}
+
+
+.awe11 {
+    float: left;
+    width: 40%;
+    padding: 0 10px;
+    margin-left: 90px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* border: 5px solid green; */
+    /* margin-left: 2px; */
+    /* margin-right: 2px; */
+    overflow: hidden;
+}
+
+
+/* Remove extra left and right margins, due to padding in awes */
+.tyu {
+    margin: 0 -5px;
+
+    background: #54d192;
+}
+
+/* Clear floats after the awes */
+.tyu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter hghgs */
+.hghg {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "hghg" effect */
+    padding: 16px;
+    text-align: center;
+    background: linear-gradient(#364f3a, #156161);
+}
+
+
+.hghg1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "hghg" effect */
+    padding: 16px;
+    text-align: center;
+    background: linear-gradient(#364f3a, #156161);
+}
+
+.hghg11 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "hghg" effect */
+    padding: 16px;
+    text-align: center;
+    background: linear-gradient(#364f3a, #156161);
+}
+
+
+
+.hghg:hover {
+    background: linear-gradient(#b42626, #156161);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+
+/* Responsive awes - one awe layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .awe {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .awe1 {
+        width: 90%;
+        display: block;
+        /* margin-bottom: 20px; */
+        margin: 20px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .awe11 {
+        width: 90%;
+        display: block;
+        /* margin-bottom: 20px; */
+        margin: 20px;
+    }
+}
+
+/* ---------------------------------- accordion -------------------------------------------------*/
+
+.accordionnew {
+    background-color: #0c6936;
+    color: #f0f5f5;
+    cursor: pointer;
+    padding: 1%;
+    margin-left: 5%;
+    margin-bottom: 1px;
+
+    width: 90%;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .activenew class with JS), and when you move the mouse over it (hover) */
+.activenew,
+.accordionnew:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordionnew panelnew. Note: hidden by default */
+.panelnew {
+    /* padding: 0 18px; */
+    color: black;
+    padding: 1%;
+    margin-left: 8%;
+    padding-left: 8%;
+    margin-bottom: 1px;
+    width: 84%;
+    height: fit-content;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    /* text-align: center; */
+}
+
+
+
+/* project */
+
+/* * {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;} */
+
+/* Style the dummy */
+.dummy {
+    float: left;
+    /* border: 1px solid rgb(140, 195, 185); 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; */
+    background-color: #b57676;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    /* margin:2%; */
+    /* width: 95vw; */
+}
+
+.mn {
+    border: 1px solid rgb(140, 195, 185);
+    border-radius: 15px;
+    background-color: #207850;
+    /* width: 100%; */
+    height: 50vw;
+    margin: 2%;
+    width: 95vw;
+    overflow: hidden;
+
+
+}
+
+/* Style the buttons inside the dummy */
+.dummy button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.dummy button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "dummy button" class */
+.dummy button.active {
+    background-color: #ccc;
+}
+
+/* Style the dummy content */
+.dummycontent {
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid rgb(187, 198, 196);
+    border-top-right-radius: 15px;
+    border-BOTTOM-right-radius: 15px; */
+    width: 70%;
+    border-left: none;
+    height: 300px;
+    display: none;
+
+    overflow: hidden;
+}
+
+/* Clear floats after the dummy */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: dummyle;
+}
