@@ -14,7 +14,7 @@ html {
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 10 px;
 }
 
 ::-webkit-scrollbar-track {
@@ -206,7 +206,7 @@ section .title::after {
 /* home section styling */
 .home {
     display: flex;
-    background: url("images/main2.png") no-repeat center;
+    background: url("main2.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
