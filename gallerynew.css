@@ -1,0 +1,94 @@
+
+#myButtonContainernew{
+align-items: center;
+justify-content: center;
+padding-left: 35%;
+
+}
+
+
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each columnb (if you want) */
+.row,
+.row > .columnb {
+  padding: 8px;
+}
+
+/* Create three equal columnbs that floats next to each other */
+.columnb {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columnbs by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mean{
+  background: radial-gradient(#111, #071a1a);
+
+}
+
+/* nnewcontent */
+.nnewcontent {
+  background:linear-gradient( #156161,#0a6753);;
+  padding: 10px;
+  text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btnnew {
+  
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btnnew:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btnnew.active {
+  background-color: #6b1919;
+   color: white;
+}
+
+
+@media (max-width: 500px) {
+  .btnnew {
+    border: none;
+    outline: none;
+
+    background-color: white;
+    cursor: pointer;
+    width :50%;
+  }
+  .columnb {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+
+  }
+
+}

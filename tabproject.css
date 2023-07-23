@@ -1,0 +1,86 @@
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tabbackground{
+
+  margin: 2%;
+
+
+}
+.tab {
+  float: left;
+
+  border-left:2px solid  #9fecd0;
+   border-top:2px solid  #9fecd0; 
+   border-bottom:2px solid  #9fecd0; 
+  
+
+  border-top-left-radius: 1%;
+  border-bottom-left-radius: 1%;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 380px;
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background:linear-gradient(#2e2d2d, #156161);
+  color:white;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background:white;
+  color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+overflow: scroll;
+  text-align: left;
+  float: left;
+  padding:  18px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 380px;
+   background-color: white;
+  color: BLACK;
+  border-top-right-radius: 1%;
+  border-bottom-right-radius: 1%;
+  border-right:2px solid  #9fecd0;
+  border-top:2px solid  #9fecd0;
+  border-bottom:2px solid  #9fecd0;
+}
+
+.project{
+  color: white;
+  background: radial-gradient(#2d2525, #063b3b);
+  overflow: hidden;
+  padding-top: none;
+ 
+}
+.project .title::after {
+  background: #461818;
+
+  content: "what i made";
+}
+.project .title::before {
+  background: #130505;
+}
