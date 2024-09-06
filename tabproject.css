@@ -21,7 +21,7 @@ body {font-family: "Lato", sans-serif;}
   background-color: #f1f1f1;
   width: 30%;
   height: 380px;
-  overflow: hidden;
+  overflow-y: scroll;
 }
 
 /* Style the buttons inside the tab */
